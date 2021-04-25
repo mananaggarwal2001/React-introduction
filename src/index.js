@@ -2,10 +2,12 @@ import react from "react";
 import reactDOM from "react-dom"; // latest es6 version of javascript
 const Yourname = "Manan";
 
+const date = new Date();
+
 reactDOM.render(
   <div>
     <h1>Hello {Yourname}</h1>
-    <p>Copyright 2021 Manan Aggarwal</p>
+    <p>Copyright {date.getFullYear()} Manan Aggarwal</p>
   </div>,
   document.getElementById("root")
 );

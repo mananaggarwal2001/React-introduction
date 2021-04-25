@@ -1,11 +1,27 @@
 import react from "react";
 import reactDOM from "react-dom"; // latest es6 version of javascript
 const Yourname = "Manan";
-
+// if we want to insert the javascript inside the html then we have to simply write {variable name}
+const Fname = "Manan";
+const LName = "Aggarwal";
+// we can add any javasscript expression inside the {}.
+// we can use as many curly braces as we can
 reactDOM.render(
   <div>
+
+    <h1>Hello {Fname + " " + LName}</h1>
+
     <h1>Hello {Yourname}</h1>
     <p>Copyright 2021 Manan Aggarwal</p>
+	
+  </div>,
+  document.getElementById("root")
+);
+
+// By using String interpolation
+reactDOM.render(
+  <div>
+    <h1>Hello {`${Fname} ${LName}`}</h1>
   </div>,
   document.getElementById("root")
 );
@@ -29,6 +45,7 @@ reactDOM.render(
 //   </div>,
 //   document.getElementById("root")
 // );
+
 
 // reactDOM.render(
 //   <div>

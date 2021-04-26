@@ -1,40 +1,57 @@
+import "./styles.css";
 import react from "react";
 import reactDOM from "react-dom"; // latest es6 version of javascript
 const Yourname = "Manan";
 
-
 const date = new Date();
 
+const image = "https://picsum.photos/200";
+
+// how to style your react element
+reactDOM.render(
+  <div>
+    <h1 className="heading" contentEditable="true" spellCheck="false">
+      List of the Stationary
+    </h1>
+    <ul>
+      <li>Pencil</li>
+      <li>pen</li>
+      <li>Eraser</li>
+    </ul>
+    <img src={image} alt="random"></img>
+  </div>,
+  document.getElementById("root")
+);
 
 // if we want to insert the javascript inside the html then we have to simply write {variable name}
-const Fname = "Manan";
-const LName = "Aggarwal";
+// const Fname = "Manan";
+// const LName = "Aggarwal";
 // we can add any javasscript expression inside the {}.
 // we can use as many curly braces as we can
 
-reactDOM.render(
-  <div>
+// reactDOM.render(
+//   <div>
 
-    <h1>Hello {Fname + " " + LName}</h1>
+//     <h1>Hello {Fname + " " + LName}</h1>
 
-    <h1>Hello {Yourname}</h1>
+//     <h1>Hello {Yourname}</h1>
 
-    <p>Copyright {date.getFullYear()} Manan Aggarwal</p>
+//     <p>Copyright {date.getFullYear()} Manan Aggarwal</p>
 
-    <p>Copyright 2021 Manan Aggarwal</p>
-	
-  </div>,
-  document.getElementById("root")
-);
+//     <p>Copyright 2021 Manan Aggarwal</p>
+
+//   </div>,
+//   document.getElementById("root")
+// );
 
 // By using String interpolation
-reactDOM.render(
-  <div>
-    <h1>Hello {`${Fname} ${LName}`}</h1>
+// reactDOM.render(
+//   <div>
+//     <h1>Hello {`${Fname} ${LName}`}</h1>
 
-  </div>,
-  document.getElementById("root")
-);
+//   </div>,
+//   document.getElementById("root")
+// );
 
 // if we want to insert the javascript inside the html then we have to simply write {variable name}
 // const Fname = "Manan";
@@ -52,19 +69,6 @@ reactDOM.render(
 // reactDOM.render(
 //   <div>
 //     <h1>Hello {`${Fname} ${LName}`}</h1>
-//   </div>,
-//   document.getElementById("root")
-// );
-
-
-// reactDOM.render(
-//   <div>
-//     <h1>List of the Stationary</h1>
-//     <ul>
-//       <li>Pencil</li>
-//       <li>pen</li>
-//       <li>Eraser</li>
-//     </ul>
 //   </div>,
 //   document.getElementById("root")
 // );

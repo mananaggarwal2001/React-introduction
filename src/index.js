@@ -1,38 +1,42 @@
 import "./styles.css";
 import react from "react";
 import reactDOM from "react-dom"; // latest es6 version of javascript
+import App from "./App";
+
+reactDOM.render(<App />, document.getElementById("root"));
+
 // const Yourname = "Manan";
-const Yourname = "Manan";
+// const Yourname = "Manan";
 
-const customColor = {
-  color: "red"
-};
-const date = new Date();
+// const customColor = {
+//   color: "red"
+// };
+// const date = new Date();
 
-if (date.getHours() >= 6 && date.getHours() <= 12) {
-  reactDOM.render(
-    <h1 class="heading" style={customColor}>
-      Good Morning
-    </h1>,
-    document.getElementById("root")
-  );
-} else if (date.getHours() >= 12 && date.getHours() <= 18) {
-  customColor.color = "green";
-  reactDOM.render(
-    <h1 class="heading" style={customColor}>
-      Good Evening
-    </h1>,
-    document.getElementById("root")
-  );
-} else if (date.getHours() >= 18 && date.getHours() <= 24) {
-  customColor.color = "blue";
-  reactDOM.render(
-    <h1 class="heading" style={customColor}>
-      Good Night
-    </h1>,
-    document.getElementById("root")
-  );
-}
+// if (date.getHours() >= 6 && date.getHours() <= 12) {
+//   reactDOM.render(
+//     <h1 class="heading" style={customColor}>
+//       Good Morning
+//     </h1>,
+//     document.getElementById("root")
+//   );
+// } else if (date.getHours() >= 12 && date.getHours() <= 18) {
+//   customColor.color = "green";
+//   reactDOM.render(
+//     <h1 class="heading" style={customColor}>
+//       Good Evening
+//     </h1>,
+//     document.getElementById("root")
+//   );
+// } else if (date.getHours() >= 18 && date.getHours() <= 24) {
+//   customColor.color = "blue";
+//   reactDOM.render(
+//     <h1 class="heading" style={customColor}>
+//       Good Night
+//     </h1>,
+//     document.getElementById("root")
+//   );
+// }
 // if we want to insert the javascript inside the html then we have to simply write {variable name}
 const Fname = "Manan";
 const LName = "Aggarwal";

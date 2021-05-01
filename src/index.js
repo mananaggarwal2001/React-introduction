@@ -3,7 +3,7 @@ import react from "react";
 import reactDOM from "react-dom"; // latest es6 version of javascript
 import App from "./App";
 
-reactDOM.render(<App />, document.getElementById("root"));
+reactDOM.render(<App name="Manan" />, document.getElementById("root"));
 
 // const Yourname = "Manan";
 // const Yourname = "Manan";

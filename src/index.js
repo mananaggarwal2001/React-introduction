@@ -43,7 +43,7 @@ console.log(findedNumber);
 
 const findedIndex = number.findIndex((x) => {
   return x > 5;
-});
+}); // => is called as the fat arrow .
 
 console.log("Index is " + findedIndex);
 

@@ -2,9 +2,54 @@ import "./styles.css";
 import react from "react";
 import reactDOM from "react-dom"; // latest es6 version of javascript
 import App from "./App";
+var number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-reactDOM.render(<App name="Manan" />, document.getElementById("root"));
+//map- map() function is used for looping around the components and
+//extracting the things according to the function which was pass as an parameter.
+function double(x) {
+  return x * 2;
+}
 
+const newNumbers = number.map(double);
+console.log(newNumbers);
+
+//filter- create the new array by keeping the items that return the value true .
+
+const filterNumber = number.filter((x) => {
+  return x > 5;
+});
+
+console.log(filterNumber);
+
+//reduce - Accumulate the value by doing something to the ezch item in an array.
+
+var accumulatedNumber = number.reduce((accumulator, currentNumber) => {
+  console.log("accumulated Number: " + accumulator);
+  console.log("currentNumber: " + currentNumber);
+  return accumulator + currentNumber;
+}); //accumulator parameter is a simple variable jo continuous apni value badalta hain
+// currentNumber which extracts the number from the parameter.
+console.log(accumulatedNumber);
+
+// find - find the first item that matches the condition in an array.
+
+const findedNumber = number.find((x) => {
+  return x > 5;
+});
+
+console.log(findedNumber);
+
+// find-Index - returns the index of the first matched item in an array according to the condition .
+
+const findedIndex = number.findIndex((x) => {
+  return x > 5;
+});
+
+console.log("Index is " + findedIndex);
+
+// ************************************ Javascript Functions end***************************************
+
+// reactDOM.render(<App name="Manan" />, document.getElementById("root"));
 // const Yourname = "Manan";
 // const Yourname = "Manan";
 
